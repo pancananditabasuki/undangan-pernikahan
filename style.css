@@ -383,13 +383,13 @@ body {
     height: 100px;
   }
   .timeline li .timeline-panel {
-    width: 65%;
+    width: 60%;
     transform: translateX(-20px);
   }
   .timeline li .timeline-panel::before {
-    top: 30px;
+    top: 35px;
   }
   .timeline li .timeline-panel::after {
-    top: 31px;
+    top: 36px;
   }
 }
