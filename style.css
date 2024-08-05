@@ -6,8 +6,7 @@
 
 body {
   font-size: 1.2rem;
-  font-family: "Work Sans", sans-serif;
-  min-height: 8000px;
+  font-family: "lora", serif;
 }
 
 .hero::before {
@@ -86,7 +85,9 @@ body {
 
 .home h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
   color: var(--tosca);
   font-family: "Dancing Script", cursive;
   font-size: 5rem;
@@ -184,7 +185,9 @@ body {
   font-weight: 300;
   font-size: 0.9rem;
 }
-.gallery {
+.gallery,
+.rsvp,
+.gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -197,7 +200,8 @@ body {
   background-position: center;
 }
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -206,7 +210,9 @@ body {
   margin-bottom: 1rem;
 }
 .story p,
-.gallery p {
+.gallery p,
+.rsvp polyline,
+.gifts p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -302,9 +308,143 @@ body {
   background-color: #e1f4fa;
 }
 
+.rsvp {
+  background-color: var(--tosca);
+}
+.rsvp h2 {
+  font-size: 4.5rem;
+  color: white;
+}
+.rsvp p {
+  color: white;
+  margin-top: 2rem;
+}
+.rsvp form label {
+  color: white;
+}
+.rsvp btn-prmary {
+  color: white;
+}
+
+/* BASIC STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* IMAGE GRID STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.gallery image-grid figure {
+  margin-bottom: 0;
+}
+
+.gallery image-grid img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s;
+}
+
+.gallery image-grid a:hover img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+/* LIGHTBOX STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.lightbox-modal .modal-content {
+  background: var(--shadow);
+}
+
+.lightbox-modal .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+.lightbox-modal .modal-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+}
+
+.lightbox-modal img {
+  width: auto;
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+.lightbox-modal .carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--shadow);
+}
+
+.lightbox-modal .carousel-control-prev,
+.lightbox-modal .carousel-control-next {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  width: auto;
+}
+
+.lightbox-modal .carousel-control-prev {
+  left: 10px;
+}
+
+.lightbox-modal .carousel-control-next {
+  right: 10px;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--tosca);
+  color: white;
+}
+footer a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 5s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Media Query */
 /* Extra Large */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .home .heart {
     transform: translateX(-50%) translateY(45px);
   }
@@ -368,9 +508,13 @@ body {
     width: 140px;
     height: 140px;
   }
+
+  .notification {
+    display: none;
+  }
 }
 /* Mobile Phone */
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   html {
     font-size: 55%;
   }
@@ -379,8 +523,8 @@ body {
     margin: 3px;
   }
   .timeline li .timeline-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .timeline li .timeline-panel {
     width: 60%;
