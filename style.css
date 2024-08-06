@@ -421,8 +421,8 @@ footer li {
   height: 4rem;
   font-size: 3rem;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 8rem;
+  right: 1rem;
   cursor: pointer;
   color: white;
   opacity: 0.5;
