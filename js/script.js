@@ -6,7 +6,7 @@
 
 const sr = ScrollReveal({
   distance: "65px",
-  duration: 2700,
+  duration: 2000,
   delay: 450,
   reset: true,
 });
@@ -15,10 +15,21 @@ const sr = ScrollReveal({
 sr.reveal(".gallery span", { delay: 200, origin: "bottom" });
 sr.reveal(".gallery h2", { delay: 200, origin: "bottom" });
 sr.reveal(".gallery p", { delay: 200, origin: "bottom" });
-sr.reveal(".image-grid", { delay: 200, origin: "bottom" });
+sr.reveal(".image-grid .col1 a", { delay: 300, origin: "bottom" });
+sr.reveal(".image-grid .col2 a", { delay: 400, origin: "bottom" });
+sr.reveal(".image-grid .col3 a", { delay: 500, origin: "bottom" });
+sr.reveal(".image-grid .col4 a", { delay: 600, origin: "bottom" });
+sr.reveal(".image-grid .col5 a", { delay: 300, origin: "bottom" });
+sr.reveal(".image-grid .col6 a", { delay: 400, origin: "bottom" });
+sr.reveal(".image-grid .col7 a", { delay: 500, origin: "bottom" });
+sr.reveal(".image-grid .col8 a", { delay: 600, origin: "bottom" });
+sr.reveal(".image-grid .col9 a", { delay: 300, origin: "bottom" });
+sr.reveal(".image-grid .col10 a", { delay: 400, origin: "bottom" });
+
 // End Gallery
 
 // Start Story
+sr.reveal(".timeline", { delay: 200, origin: "bottom" });
 sr.reveal(".timeline-heading", { delay: 200, origin: "bottom" });
 sr.reveal(".timeline-body", { delay: 200, origin: "bottom" });
 sr.reveal(".timeline-panel", { delay: 200, origin: "bottom" });
@@ -28,19 +39,56 @@ sr.reveal(".story p", { delay: 200, origin: "bottom" });
 sr.reveal(".story h2", { delay: 200, origin: "bottom" });
 
 // Start Info
+sr.reveal(".info iframe", { delay: 400, origin: "bottom" });
 sr.reveal(".info h2", { delay: 200, origin: "bottom" });
-sr.reveal(".info p", { delay: 200, origin: "bottom" });
-sr.reveal(".info a", { delay: 200, origin: "bottom" });
-sr.reveal(".card", { delay: 200, origin: "bottom" });
+sr.reveal(".info p", { delay: 300, origin: "bottom" });
+sr.reveal(".info a", { delay: 500, origin: "bottom" });
+sr.reveal(".card", { delay: 500, origin: "bottom" });
 
 // Start Home
 sr.reveal(".home h2", { delay: 200, origin: "bottom" });
-sr.reveal(".home h6", { delay: 200, origin: "bottom" });
-sr.reveal(".home h3", { delay: 200, origin: "bottom" });
-sr.reveal(".home p", { delay: 200, origin: "bottom" });
-sr.reveal(".home span", { delay: 200, origin: "bottom" });
-sr.reveal(".home h4", { delay: 200, origin: "bottom" });
-sr.reveal(".home img", { delay: 200, origin: "bottom" });
+sr.reveal(".home h6", { delay: 300, origin: "bottom" });
+sr.reveal(".home h3", { delay: 400, origin: "bottom" });
+sr.reveal(".home p", { delay: 500, origin: "bottom" });
+sr.reveal(".home span", { delay: 400, origin: "bottom" });
+sr.reveal(".home h4", { delay: 400, origin: "bottom" });
+sr.reveal(".home img", { delay: 400, origin: "bottom" });
+
+// Start rsvp
+sr.reveal(".rsvp h2", { delay: 200, origin: "bottom" });
+sr.reveal(".rsvp p", { delay: 200, origin: "bottom" });
+sr.reveal(".rsvp label", { delay: 200, origin: "bottom" });
+sr.reveal(".rsvp input", { delay: 200, origin: "bottom" });
+sr.reveal(".rsvp textarea", { delay: 200, origin: "bottom" });
+sr.reveal(".rsvp select", { delay: 200, origin: "bottom" });
+sr.reveal(".rsvp button", { delay: 200, origin: "bottom" });
+
+// Start gifts
+sr.reveal(".gifts span", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts h2", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts p", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts ul", { delay: 200, origin: "bottom" });
+
+// Start kirimkado
+sr.reveal(".kirimkado span", { delay: 200, origin: "bottom" });
+sr.reveal(".kirimkado h2", { delay: 200, origin: "bottom" });
+sr.reveal(".kirimkado p", { delay: 200, origin: "bottom" });
+sr.reveal(".kirimkado h3", { delay: 200, origin: "bottom" });
+sr.reveal(".kirimkado .container", { delay: 200, origin: "bottom" });
+
+// Start vendor
+sr.reveal(".vendor span", { delay: 200, origin: "bottom" });
+sr.reveal(".vendor h2", { delay: 200, origin: "bottom" });
+sr.reveal(".vendor p", { delay: 200, origin: "bottom" });
+sr.reveal(".vendor h3", { delay: 200, origin: "bottom" });
+sr.reveal(".vendor a", { delay: 200, origin: "bottom" });
+
+// Start berbahagia
+sr.reveal(".berbahagia", { delay: 200, origin: "bottom" });
+
+sr.reveal(".turutmengundang h1", { delay: 200, origin: "bottom" });
+sr.reveal(".turutmengundang h2", { delay: 300, origin: "bottom" });
+sr.reveal(".turutmengundang p", { delay: 300, origin: "bottom" });
 
 const imageGrid = document.querySelector(".image-grid");
 const links = imageGrid.querySelectorAll("a");
