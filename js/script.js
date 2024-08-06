@@ -23,8 +23,6 @@ sr.reveal(".image-grid .col5 a", { delay: 300, origin: "bottom" });
 sr.reveal(".image-grid .col6 a", { delay: 400, origin: "bottom" });
 sr.reveal(".image-grid .col7 a", { delay: 500, origin: "bottom" });
 sr.reveal(".image-grid .col8 a", { delay: 600, origin: "bottom" });
-sr.reveal(".image-grid .col9 a", { delay: 300, origin: "bottom" });
-sr.reveal(".image-grid .col10 a", { delay: 400, origin: "bottom" });
 
 // End Gallery
 
