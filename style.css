@@ -546,6 +546,10 @@ footer li {
 .gifts .color {
   color: black;
 }
+.gifts a {
+  color: #444;
+  text-decoration: none;
+}
 /* .gifts .container {
   background-color: white;
   background-size: cover;
