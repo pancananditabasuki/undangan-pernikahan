@@ -543,7 +543,9 @@ footer li {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
-
+.gifts .color {
+  color: #444;
+}
 /* .gifts .container {
   background-color: white;
   background-size: cover;
