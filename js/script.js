@@ -15,7 +15,7 @@ const sr = ScrollReveal({
 sr.reveal(".gallery span", { delay: 200, origin: "bottom" });
 sr.reveal(".gallery h2", { delay: 200, origin: "bottom" });
 sr.reveal(".gallery p", { delay: 200, origin: "bottom" });
-sr.reveal(".gallery", { delay: 200, origin: "bottom" });
+sr.reveal(".image-grid", { delay: 200, origin: "bottom" });
 // End Gallery
 
 // Start Story
