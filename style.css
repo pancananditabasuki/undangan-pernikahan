@@ -95,7 +95,8 @@ body {
   font-weight: bold;
 }
 .home h3,
-.kirimkado h3 {
+.kirimkado h3,
+.vendor h3 {
   color: #444;
   font-size: 1.2rem;
   margin-top: 1rem;
@@ -188,9 +189,7 @@ body {
   font-size: 0.9rem;
 }
 .gallery,
-.rsvp,
-.gifts,
-.kirimkado {
+.rsvp {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -217,7 +216,8 @@ body {
 .gallery p,
 .rsvp polyline,
 .gifts p,
-.kirimkado p {
+.kirimkado p,
+.vendor p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -400,19 +400,16 @@ body {
 }
 
 footer {
-  padding: 2rem;
+  padding: 0.5rem;
   background-color: var(--tosca);
   color: white;
 }
 footer a {
-  color: black;
+  color: white;
   font-weight: bold;
   text-decoration: none;
 }
 
-footer a:hover {
-  color: white;
-}
 footer li {
   list-style: none;
   display: inline;
@@ -441,14 +438,121 @@ footer li {
 .kirimkado .container {
   background-image: url(img/kado.jpg);
   background-size: cover;
-  /* background-color: #4d7a85; */
   padding-top: 3rem;
   padding-bottom: 17rem;
   background-position: center;
-
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
+.berbahagia,
+.gifts,
+.kirimkado {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.berbahagia .container {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.berbahagia span {
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+.berbahagia p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.berbahagia h1 {
+  color: var(--tosca);
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.berbahagia h2 {
+  color: var(--tosca);
+  font-family: "Dancing Script", cursive;
+  font-size: 2.1rem;
+}
+
+.berbahagia h3 {
+  color: #444;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.berbahagia .container::after {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 1px;
+  background-color: var(--tosca);
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.turutmengundang {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+.turutmengundang h1 {
+  color: var(--tosca);
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.turutmengundang h2 {
+  color: #444;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.turutmengundang p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.2rem;
+}
+
+.vendor span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.vendor h2 {
+  color: var(--tosca);
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* .gifts .container {
+  background-color: white;
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+} */
 
 @keyframes rotating {
   from {
@@ -533,7 +637,7 @@ footer li {
 /* Mobile Phone */
 @media (max-width: 600px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
   .simply-countdown > .simply-section {
     padding: 30px;
@@ -554,6 +658,15 @@ footer li {
     top: 41px;
   }
   .kirimkado .container {
+    width: 90%;
+  }
+  .berbahagia .container {
+    width: 90%;
+  }
+  .turutmengundang .container {
+    width: 90%;
+  }
+  .gifts .container {
     width: 90%;
   }
 }
