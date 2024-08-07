@@ -3,7 +3,9 @@
   --bg: #ffffff;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
-
+link {
+  display: none;
+}
 body {
   font-size: 1.2rem;
   font-family: "lora", serif;
