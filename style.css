@@ -612,7 +612,10 @@ footer li {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 } */
-.gifts .copy {
+.gifts .copy,
+.gifts .copy1,
+.gifts .copy2,
+.gifts .copy3 {
   font-size: 1rem;
   padding: 5px 10px;
   background-color: var(--tosca);
@@ -626,20 +629,32 @@ footer li {
   margin: 5px;
 }
 
-.gifts .copy:active {
+.gifts .copy:active,
+.gifts .copy1:active,
+.gifts .copy2:active,
+.gifts .copy3:active {
   background-color: #669caa;
 }
 
-.gifts .copy:disabled {
+.gifts .copy:disabled,
+.gifts .copy1:disabled,
+.gifts .copy2:disabled,
+.gifts .copy3:disabled {
   background: #fff;
   color: #666;
   cursor: not-allowed;
 }
 
-.content {
+.content,
+.content1,
+.content2,
+.content3 {
   margin: 1rem;
 }
-.gifts span1 {
+.gifts span1,
+.gifts span3,
+.gifts span5,
+.gifts span7 {
   background-color: #f8f8f8;
   padding: 8px 12px;
   font-size: 1.2rem;
@@ -649,7 +664,10 @@ footer li {
   padding-top: 6px;
   padding-bottom: 6px;
 }
-.gifts span2 {
+.gifts span2,
+.gifts span4,
+.gifts span6,
+.gifts span8 {
   font-size: 1rem;
 }
 
@@ -768,12 +786,4 @@ footer li {
   .gifts .container {
     width: 90%;
   }
-
-/*   .copy-text button:before,
-  .copy-text1 button:before,
-  .copy-text2 button:before,
-  .copy-text3 button:before {
-    top: 27px;
-    right: 25px;
-  } */
 }
