@@ -612,7 +612,7 @@ footer li {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 } */
-.copy {
+.gifts .copy {
   font-size: 1rem;
   padding: 5px 10px;
   background-color: var(--tosca);
@@ -626,11 +626,11 @@ footer li {
   margin: 5px;
 }
 
-.copy:active {
+.gifts .copy:active {
   background-color: #669caa;
 }
 
-.copy:disabled {
+.gifts .copy:disabled {
   background: #fff;
   color: #666;
   cursor: not-allowed;
