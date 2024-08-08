@@ -94,6 +94,14 @@ sr.reveal(".vendor a", { delay: 200, origin: "bottom" });
 
 // Start berbahagia
 sr.reveal(".berbahagia", { delay: 200, origin: "bottom" });
+sr.reveal(".berbahagia span", { delay: 200, origin: "bottom" });
+sr.reveal(".berbahagia h1", { delay: 200, origin: "bottom" });
+sr.reveal(".berbahagia .perempuan p", { delay: 200, origin: "bottom" });
+sr.reveal(".berbahagia .perempuan h2", { delay: 300, origin: "bottom" });
+sr.reveal(".berbahagia .perempuan h3", { delay: 400, origin: "bottom" });
+sr.reveal(".berbahagia .pria p", { delay: 200, origin: "bottom" });
+sr.reveal(".berbahagia .pria h2", { delay: 300, origin: "bottom" });
+sr.reveal(".berbahagia .pria h3", { delay: 400, origin: "bottom" });
 
 sr.reveal(".turutmengundang h1", { delay: 200, origin: "bottom" });
 sr.reveal(".turutmengundang h2", { delay: 300, origin: "bottom" });
@@ -307,3 +315,93 @@ function createCaption(caption) {
 }
 
 // End Image-grid
+
+//
+
+// document
+//   .getElementById("kirimucapanselamat")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault();
+
+//     // Get form data
+//     const name = document.getElementById("nama").value;
+//     const alamat = document.getElementById("alamat").value;
+//     const kirimucapan = document.getElementById("ucapan").value;
+//     const status = document.getElementById("status").value;
+
+//     // Send data to the server (using Fetch API)
+//     fetch("/submit", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({
+//         name: name,
+//         alamat: alamat,
+//         kirimucapan: kirimucapan,
+//         status: status,
+//       }),
+//     })
+//       .then((response) => response.json())
+//       .then((data) => {
+//         // Display submitted data below the form
+//         let submittedData = document.getElementById("submittedData");
+//         let newData = document.createElement("div");
+//         newData.innerHTML = `<strong>${data.name}</strong> (${data.address}) - ${data.greeting} <em>${data.confirmation}</em>`;
+//         submittedData.appendChild(newData);
+//       })
+//       .catch((error) => console.error("Error:", error));
+//   });
+
+const form = document.getElementById("kirimucapanselamat");
+const submittedNama = document.getElementById("submittedNama");
+const submittedAlamat = document.getElementById("submittedAlamat");
+const submittedUcapan = document.getElementById("submittedUcapan");
+const submittedStatus = document.getElementById("submittedStatus");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const nama = document.getElementById("nama").value;
+  const alamat = document.getElementById("alamat").value;
+  const ucapan = document.getElementById("ucapan").value;
+  const status = document.getElementById("status").value;
+
+  localStorage.setItem("nama", nama);
+  localStorage.setItem("alamat", alamat);
+  localStorage.setItem("ucapan", ucapan);
+  localStorage.setItem("status", status);
+
+  submittedNama.textContent = "" + nama;
+  submittedAlamat.textContent = "" + alamat;
+  submittedUcapan.textContent = "" + ucapan;
+  submittedStatus.textContent = "" + status;
+  // submittedData.textContent = "Username saved: " + ucapan;
+  // submittedData.textContent = "Username saved: " + status;
+});
+
+// Retrieve and display the stored username on page load
+window.onload = function () {
+  const storedUsername = localStorage.getItem("nama");
+  const storedAlamat = localStorage.getItem("alamat");
+  const storedUcapan = localStorage.getItem("ucapan");
+  const storedStatus = localStorage.getItem("status");
+
+  if (storedUsername) {
+    submittedNama.textContent = "" + storedUsername;
+  }
+  if (storedAlamat) {
+    submittedAlamat.textContent = "" + storedAlamat;
+  }
+  if (storedUcapan) {
+    submittedUcapan.textContent = "" + storedUcapan;
+  }
+  if (storedStatus) {
+    submittedStatus.textContent = "" + storedStatus;
+  }
+};
+
+nama.val("");
+alamat.val("");
+ucapan.val("");
+status.val("");
