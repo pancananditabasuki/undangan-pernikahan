@@ -769,11 +769,11 @@ footer li {
     width: 90%;
   }
 
-  .copy-text button:before,
+/*   .copy-text button:before,
   .copy-text1 button:before,
   .copy-text2 button:before,
   .copy-text3 button:before {
     top: 27px;
     right: 25px;
-  }
+  } */
 }
