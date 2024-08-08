@@ -159,6 +159,69 @@ document.querySelectorAll(".copy").forEach((copyButton) => {
   });
 });
 
+document.querySelectorAll(".copy1").forEach((copyButton) => {
+  copyButton.addEventListener("click", () => {
+    const targetElement = document.querySelector(copyButton.dataset.copy);
+    const textToCopy = targetElement.textContent.replace(/\s+/g, " ").trim();
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      // alert("Copied!");
+      const label = copyButton.querySelector(".copy-label1");
+      const originalText = label.textContent;
+
+      copyButton.disabled = true;
+      label.textContent = "Copied!";
+
+      setTimeout(() => {
+        copyButton.disabled = false;
+        label.textContent = originalText;
+      }, 500);
+    });
+  });
+});
+
+document.querySelectorAll(".copy2").forEach((copyButton) => {
+  copyButton.addEventListener("click", () => {
+    const targetElement = document.querySelector(copyButton.dataset.copy);
+    const textToCopy = targetElement.textContent.replace(/\s+/g, " ").trim();
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      // alert("Copied!");
+      const label = copyButton.querySelector(".copy-label2");
+      const originalText = label.textContent;
+
+      copyButton.disabled = true;
+      label.textContent = "Copied!";
+
+      setTimeout(() => {
+        copyButton.disabled = false;
+        label.textContent = originalText;
+      }, 500);
+    });
+  });
+});
+
+document.querySelectorAll(".copy3").forEach((copyButton) => {
+  copyButton.addEventListener("click", () => {
+    const targetElement = document.querySelector(copyButton.dataset.copy);
+    const textToCopy = targetElement.textContent.replace(/\s+/g, " ").trim();
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      // alert("Copied!");
+      const label = copyButton.querySelector(".copy-label3");
+      const originalText = label.textContent;
+
+      copyButton.disabled = true;
+      label.textContent = "Copied!";
+
+      setTimeout(() => {
+        copyButton.disabled = false;
+        label.textContent = originalText;
+      }, 500);
+    });
+  });
+});
+
 // Start Image-grid
 
 const imageGrid = document.querySelector(".image-grid");
