@@ -639,7 +639,7 @@ footer li {
 .content {
   margin: 1rem;
 }
-.content span1 {
+.gifts span1 {
   background-color: #f8f8f8;
   padding: 8px 12px;
   font-size: 1.2rem;
@@ -649,7 +649,7 @@ footer li {
   padding-top: 6px;
   padding-bottom: 6px;
 }
-.content span2 {
+.gifts span2 {
   font-size: 1rem;
 }
 
