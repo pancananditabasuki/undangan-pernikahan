@@ -3,9 +3,11 @@
   --bg: #ffffff;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
+
 link {
   display: none;
 }
+
 body {
   font-size: 1.2rem;
   font-family: "lora", serif;
@@ -545,6 +547,62 @@ footer li {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
+
+.copy-text input.text,
+.copy-text1 input.text1,
+.copy-text2 input.text2,
+.copy-text3 input.text3 {
+  background-color: #f8f8f8;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  color: #444;
+  border: none;
+  outline: none;
+  margin: 0.5rem;
+}
+
+.copy-text button,
+.copy-text1 button,
+.copy-text2 button,
+.copy-text3 button {
+  padding: 0.8rem;
+  background: var(--tosca);
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.copy-text button:before,
+.copy-text1 button:before,
+.copy-text2 button:before,
+.copy-text3 button:before {
+  content: "Copied";
+  position: absolute;
+  top: 55px;
+  right: 160px;
+  background: #669caa;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  display: none;
+}
+.copy-text button:active,
+.copy-text1 button:active,
+.copy-text2 button:active,
+.copy-text3 button:active {
+  background: #669caa;
+}
+
+.copy-text.active button:before,
+.copy-text1.active button:before,
+.copy-text2.active button:before,
+.copy-text3.active button:before {
+  display: block;
+}
+
 /* .gifts .container {
   background-color: white;
   background-size: cover;
@@ -669,5 +727,13 @@ footer li {
   }
   .gifts .container {
     width: 90%;
+  }
+
+  .copy-text button:before,
+  .copy-text1 button:before,
+  .copy-text2 button:before,
+  .copy-text3 button:before {
+    top: 27px;
+    right: 25px;
   }
 }
