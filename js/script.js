@@ -82,9 +82,9 @@ sr.reveal(".turutmengundang h2", { delay: 300, origin: "bottom" });
 sr.reveal(".turutmengundang p", { delay: 300, origin: "bottom" });
 
 // Start Copied Code
-let copyText = document.querySelector(".copy-text");
+const copyText = document.querySelector(".copy-text");
 copyText.querySelector("button").addEventListener("click", function () {
-  let input = copyText.querySelector("input.text");
+  const input = copyText.querySelector("input.text");
   input.select();
   document.execCommand("copy");
   copyText.classList.add("active");
@@ -94,9 +94,9 @@ copyText.querySelector("button").addEventListener("click", function () {
   }, 500);
 });
 
-let copyText1 = document.querySelector(".copy-text1");
+const copyText1 = document.querySelector(".copy-text1");
 copyText1.querySelector("button").addEventListener("click", function () {
-  let input = copyText1.querySelector("input.text1");
+  const input = copyText1.querySelector("input.text1");
   input.select();
   document.execCommand("copy");
   copyText1.classList.add("active");
