@@ -1,9 +1,3 @@
-// Start Gallery
-
-// End Gallery
-
-// Start Story
-
 const sr = ScrollReveal({
   distance: "65px",
   duration: 2000,
@@ -23,7 +17,6 @@ sr.reveal(".image-grid .col5 a", { delay: 300, origin: "bottom" });
 sr.reveal(".image-grid .col6 a", { delay: 400, origin: "bottom" });
 sr.reveal(".image-grid .col7 a", { delay: 500, origin: "bottom" });
 sr.reveal(".image-grid .col8 a", { delay: 600, origin: "bottom" });
-
 // End Gallery
 
 // Start Story
@@ -87,6 +80,59 @@ sr.reveal(".berbahagia", { delay: 200, origin: "bottom" });
 sr.reveal(".turutmengundang h1", { delay: 200, origin: "bottom" });
 sr.reveal(".turutmengundang h2", { delay: 300, origin: "bottom" });
 sr.reveal(".turutmengundang p", { delay: 300, origin: "bottom" });
+
+// Start Copied Code
+let copyText = document.querySelector(".copy-text");
+copyText.querySelector("button").addEventListener("click", function () {
+  let input = copyText.querySelector("input.text");
+  input.select();
+  document.execCommand("copy");
+  copyText.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    copyText.classList.remove("active");
+  }, 500);
+});
+
+let copyText1 = document.querySelector(".copy-text1");
+copyText1.querySelector("button").addEventListener("click", function () {
+  let input = copyText1.querySelector("input.text1");
+  input.select();
+  document.execCommand("copy");
+  copyText1.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    copyText1.classList.remove("active");
+  }, 500);
+});
+
+let copyText2 = document.querySelector(".copy-text2");
+copyText2.querySelector("button").addEventListener("click", function () {
+  let input = copyText2.querySelector("input.text2");
+  input.select();
+  document.execCommand("copy");
+  copyText2.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    copyText2.classList.remove("active");
+  }, 500);
+});
+
+let copyText3 = document.querySelector(".copy-text3");
+copyText3.querySelector("button").addEventListener("click", function () {
+  let input = copyText3.querySelector("input.text3");
+  input.select();
+  document.execCommand("copy");
+  copyText3.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    copyText3.classList.remove("active");
+  }, 500);
+});
+
+// End Copied Code
+
+// Start Image-grid
 
 const imageGrid = document.querySelector(".image-grid");
 const links = imageGrid.querySelectorAll("a");
@@ -157,3 +203,5 @@ function createCaption(caption) {
      <p class="m-0">${caption}</p>
     </div>`;
 }
+
+// End Image-grid
