@@ -64,7 +64,21 @@ sr.reveal(".rsvp button", { delay: 200, origin: "bottom" });
 sr.reveal(".gifts span", { delay: 200, origin: "bottom" });
 sr.reveal(".gifts h2", { delay: 200, origin: "bottom" });
 sr.reveal(".gifts p", { delay: 200, origin: "bottom" });
-sr.reveal(".gifts ul", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts li", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts i", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts img", { delay: 200, origin: "bottom" });
+// sr.reveal(".gifts span1", { delay: 200, origin: "bottom" });
+// sr.reveal(".gifts span2", { delay: 200, origin: "bottom" });
+// sr.reveal(".gifts span3", { delay: 200, origin: "bottom" });
+// sr.reveal(".gifts span4", { delay: 200, origin: "bottom" });
+// sr.reveal(".gifts span5", { delay: 200, origin: "bottom" });
+// sr.reveal(".gifts span6", { delay: 200, origin: "bottom" });
+// sr.reveal(".gifts span7", { delay: 200, origin: "bottom" });
+// sr.reveal(".gifts span8", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts .copy", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts .copy1", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts .copy2", { delay: 200, origin: "bottom" });
+sr.reveal(".gifts .copy3", { delay: 200, origin: "bottom" });
 
 // Start kirimkado
 sr.reveal(".kirimkado span", { delay: 200, origin: "bottom" });
