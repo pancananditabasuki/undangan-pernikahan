@@ -548,7 +548,7 @@ footer li {
   margin-bottom: 3rem;
 }
 
-.copy-text input.text,
+/* .copy-text input.text,
 .copy-text1 input.text1,
 .copy-text2 input.text2,
 .copy-text3 input.text3 {
@@ -601,7 +601,7 @@ footer li {
 .copy-text2.active button:before,
 .copy-text3.active button:before {
   display: block;
-}
+} */
 
 /* .gifts .container {
   background-color: white;
@@ -612,6 +612,46 @@ footer li {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 } */
+.copy {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: var(--tosca);
+  color: #fff;
+  border-radius: 4px;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.copy:active {
+  background-color: #669caa;
+}
+
+.copy:disabled {
+  background: #fff;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.content {
+  margin: 1rem;
+}
+.content span1 {
+  background-color: #f8f8f8;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  color: #444;
+  border: none;
+  outline: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.content span2 {
+  font-size: 1rem;
+}
 
 @keyframes rotating {
   from {
